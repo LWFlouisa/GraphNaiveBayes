@@ -5,7 +5,6 @@ portmanteau = NaiveBayes.new(:formal, :informal, :depends)
 # Formal Words
 portmanteau.train(:formal, 'Ta Ribigurumugouache',  'word') # Refridgerated Gouache paint
 portmanteau.train(:formal, 'Tos Shinkuentre',       'word') # Entrance in the sink.
-portmanteau.train(:formal, 'Ta Aisubokkusuentre',   'word') # Entrance into the ice box.
 portmanteau.train(:formal, 'Ta Shadopratiquer',     'word') # Slope practice, think skateboarding.
 portmanteau.train(:formal, 'Ta Ribingurumumanger',  'word') # Eating in the living room.
 portmanteau.train(:formal, 'Te Rokapratiquer',      'word') # Practice opening the fridge.
@@ -36,29 +35,41 @@ portmanteau.train(:formal, 'Ta Aisubokkusumur',     'word') # Ice box wall.
 portmanteau.train(:formal, 'Te Daidakoromanger',    'word') # Eat for the first time.
 portmanteau.train(:formal, 'Tos Basurumucanape',    'word') # Couch in the restroom, who knows someone might be silly enough.
 portmanteau.train(:formal, 'Ta Rokalaver',          'word') # Wash the wall.
+portmanteau.train(:formal, 'Tos Shadomerde',        'word') # Shit on a slope.
+portmanteau.train(:formal, 'Te Ribingurumucanape',  'word') # Living room couch.
+portmanteau.train(:formal, 'Tos Daidakorodorm',     'word') # First time sleep.
+portmanteau.train(:formal, 'Tos Garejisortie',      'word') # Garage exit.
+portmanteau.train(:formal, 'Ta Shinshitsusortie',   'word') # Bedroom exit.
+portmanteau.train(:formal, 'Te Garejipratiquer',    'word') # Garage practice. Ex Skating in the garage.
+portmanteau.train(:formal, 'Te Daidakoroentre',     'word') # First time entrance.
+portmanteau.train(:formal, 'Ta Rokapratiquer',      'word') # Fridge practice.
 
 # Informal Words
-portmanteau.train(:informal, 'Te Daidakoromanger',    'word') # Eating shit.
-portmanteau.train(:informal, 'Te Daidakoromerde',     'word') # First Time Shit
-portmanteau.train(:informal, 'Ta Ribingurumumerde',   'word') # Shitting in the living room.
-portmanteau.train(:informal, 'Tos Iemerde',           'word') # House shitting
-portmanteau.train(:informal, 'Tos Shinkumerde',       'word') # Shitting in the sink.
-portmanteau.train(:informal, 'Tos Garejimerde',       'word') # Shitting in the garage,
-portmanteau.train(:informal, 'Ta Basurumumanger',     'word') # Eating in the bathroom.
-portmanteau.train(:informal, 'Ta Iemanger',           'word') # Eating an entire house.
-portmanteau.train(:informal, 'Tos Uindomerde',        'word') # Window shit.
-portmanteau.train(:informal, 'Tos Rokalaver',         'word') # Bath in the refridgerator.
-portmanteau.train(:informal, 'Tos Aisubokkusulaver',  'word') # Wash in the deadly.
-portmanteau.train(:informal, 'Ta Shinshitsugouache',  'word') # Put open gouache on a couch.
-portmanteau.train(:informal, 'Te Shinkudorm',         'word') # Sleep in the sink.
-portmanteau.train(:informal, 'Ta Aisubokkusumerde',   'word') # Shitting in the icebox.
-portmanteau.train(:informal, 'Te Rokacanape',         'word') # Couch in the refridgerator.
-portmanteau.train(:informal, 'Te Basurumumanger',     'word') # Eating in the restroom.
-portmanteau.train(:informal, 'Ta Aisubokkusugouache', 'word') # Gouache in the ice box.
-portmanteau.train(:informal, 'Te Rokamanger',         'word') # Eat the wall.
+portmanteau.train(:informal, 'Te Daidakoromanger',      'word') # Eating shit.
+portmanteau.train(:informal, 'Te Daidakoromerde',       'word') # First Time Shit
+portmanteau.train(:informal, 'Ta Ribingurumumerde',     'word') # Shitting in the living room.
+portmanteau.train(:informal, 'Tos Iemerde',             'word') # House shitting
+portmanteau.train(:informal, 'Tos Shinkumerde',         'word') # Shitting in the sink.
+portmanteau.train(:informal, 'Tos Garejimerde',         'word') # Shitting in the garage,
+portmanteau.train(:informal, 'Ta Basurumumanger',       'word') # Eating in the bathroom.
+portmanteau.train(:informal, 'Ta Iemanger',             'word') # Eating an entire house.
+portmanteau.train(:informal, 'Tos Uindomerde',          'word') # Window shit.
+portmanteau.train(:informal, 'Tos Rokalaver',           'word') # Bath in the refridgerator.
+portmanteau.train(:informal, 'Tos Aisubokkusulaver',    'word') # Wash in the deadly.
+portmanteau.train(:informal, 'Ta Shinshitsugouache',    'word') # Put open gouache on a couch.
+portmanteau.train(:informal, 'Te Shinkudorm',           'word') # Sleep in the sink.
+portmanteau.train(:informal, 'Ta Aisubokkusumerde',     'word') # Shitting in the icebox.
+portmanteau.train(:informal, 'Te Rokacanape',           'word') # Couch in the refridgerator.
+portmanteau.train(:informal, 'Te Basurumumanger',       'word') # Eating in the restroom.
+portmanteau.train(:informal, 'Ta Aisubokkusugouache',   'word') # Gouache in the ice box.
+portmanteau.train(:informal, 'Te Rokamanger',           'word') # Eat the wall.
+portmanteau.train(:informal, 'Tos Shinshitsupratiquer', 'word') # "Bedroom Practice", sex.
+portmanteau.train(:informal, 'Ta Rokamerde',            'word') # Refridgerator shitting.
 
 ## Depends
 portmanteau.train(:depends, 'Te Shinshitsumerde',   'word') # Shitting in the restroom? It depends.
+portmanteau.train(:depends, 'Ta Aisubokkusuentre',  'word') # Entrance into the ice box.
+portmeantau.train(:depends, 'Te Shadolaver',        'word')
 
 #classification = portmanteau.classify("Te Uindoporte")
 
