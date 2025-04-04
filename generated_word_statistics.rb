@@ -58,7 +58,7 @@ portmanteau.train(:informal, 'Ta Aisubokkusugouache', 'word') # Gouache in the i
 portmanteau.train(:informal, 'Te Rokamanger',         'word') # Eat the wall.
 
 ## Depends
-#portmanteau.train(:depends, 'Te Shinshitsumerde',   'word') # Shitting in the restroom? It depends.
+portmanteau.train(:depends, 'Te Shinshitsumerde',   'word') # Shitting in the restroom? It depends.
 
 #classification = portmanteau.classify("Te Uindoporte")
 
